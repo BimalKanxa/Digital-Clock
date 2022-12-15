@@ -3,17 +3,16 @@
 <head>
     <title>JavaScript current day and time</title>
     <script>
- 	window.onload=function()
- 	{
+ 	 setInterval(() => {
 
 	const d = new Date();
 	// const weekday=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
 	//let day=weekday[d.getDay()];
 	//document.getElementById('date').innerHTML =day;
 	document.getElementById('time').innerHTML =d.getHours() + ":" +d.getMinutes() +":"+d.getSeconds();
-	
+	   }, 1000);
 
-	}
+	
     </script>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap'); 
